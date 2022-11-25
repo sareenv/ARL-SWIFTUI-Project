@@ -12,6 +12,14 @@
 		4284B8992922065C00C03742 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4284B8982922065C00C03742 /* Experience.rcproject */; };
 		4284B89B2922065C00C03742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4284B89A2922065C00C03742 /* Assets.xcassets */; };
 		4284B89E2922065C00C03742 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4284B89D2922065C00C03742 /* Preview Assets.xcassets */; };
+		4284B8A729220D1C00C03742 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284B8A629220D1C00C03742 /* Coordinator.swift */; };
+		4284B8AD2922B45500C03742 /* LunarRover.reality in Resources */ = {isa = PBXBuildFile; fileRef = 4284B8AC2922B40F00C03742 /* LunarRover.reality */; };
+		42A0027B292EF84F00E83178 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0027A292EF84F00E83178 /* ARViewContainer.swift */; };
+		42A0027D292FFA6200E83178 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0027C292FFA6200E83178 /* ObjectModel.swift */; };
+		42A002812930222200E83178 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A002802930222200E83178 /* DetailView.swift */; };
+		42A002822930390700E83178 /* CosmonautSuit.reality in Resources */ = {isa = PBXBuildFile; fileRef = 42A0027E2930149000E83178 /* CosmonautSuit.reality */; };
+		42A002832930390A00E83178 /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = 42A0027F2930150A00E83178 /* hab_en.reality */; };
+		42A0028529303D4F00E83178 /* VOLCANO.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 42A0028429303D4F00E83178 /* VOLCANO.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		4284B8982922065C00C03742 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		4284B89A2922065C00C03742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4284B89D2922065C00C03742 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4284B8A629220D1C00C03742 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4284B8AC2922B40F00C03742 /* LunarRover.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LunarRover.reality; sourceTree = "<group>"; };
+		42A0027A292EF84F00E83178 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		42A0027C292FFA6200E83178 /* ObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
+		42A0027E2930149000E83178 /* CosmonautSuit.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = CosmonautSuit.reality; sourceTree = "<group>"; };
+		42A0027F2930150A00E83178 /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = hab_en.reality; sourceTree = "<group>"; };
+		42A002802930222200E83178 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		42A0028429303D4F00E83178 /* VOLCANO.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = VOLCANO.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +71,17 @@
 			children = (
 				4284B8942922065C00C03742 /* AppDelegate.swift */,
 				4284B8962922065C00C03742 /* ContentView.swift */,
+				4284B8A629220D1C00C03742 /* Coordinator.swift */,
 				4284B8982922065C00C03742 /* Experience.rcproject */,
+				4284B8AC2922B40F00C03742 /* LunarRover.reality */,
 				4284B89A2922065C00C03742 /* Assets.xcassets */,
 				4284B89C2922065C00C03742 /* Preview Content */,
+				42A0027A292EF84F00E83178 /* ARViewContainer.swift */,
+				42A0027C292FFA6200E83178 /* ObjectModel.swift */,
+				42A0027E2930149000E83178 /* CosmonautSuit.reality */,
+				42A0027F2930150A00E83178 /* hab_en.reality */,
+				42A002802930222200E83178 /* DetailView.swift */,
+				42A0028429303D4F00E83178 /* VOLCANO.usdz */,
 			);
 			path = HelloAR;
 			sourceTree = "<group>";
@@ -129,7 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4284B89E2922065C00C03742 /* Preview Assets.xcassets in Resources */,
+				42A002832930390A00E83178 /* hab_en.reality in Resources */,
+				42A0028529303D4F00E83178 /* VOLCANO.usdz in Resources */,
 				4284B89B2922065C00C03742 /* Assets.xcassets in Resources */,
+				4284B8AD2922B45500C03742 /* LunarRover.reality in Resources */,
+				42A002822930390700E83178 /* CosmonautSuit.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4284B8A729220D1C00C03742 /* Coordinator.swift in Sources */,
+				42A0027B292EF84F00E83178 /* ARViewContainer.swift in Sources */,
 				4284B8972922065C00C03742 /* ContentView.swift in Sources */,
+				42A002812930222200E83178 /* DetailView.swift in Sources */,
 				4284B8952922065C00C03742 /* AppDelegate.swift in Sources */,
+				42A0027D292FFA6200E83178 /* ObjectModel.swift in Sources */,
 				4284B8992922065C00C03742 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +306,7 @@
 				DEVELOPMENT_TEAM = 99F8Z5B2S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ARL;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,6 +314,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +339,7 @@
 				DEVELOPMENT_TEAM = 99F8Z5B2S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ARL;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +347,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
