@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4226B1F329340C3000B0CE6E /* ScientistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226B1F229340C3000B0CE6E /* ScientistController.swift */; };
+		4226B1F529340C5E00B0CE6E /* Scientist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226B1F429340C5E00B0CE6E /* Scientist.swift */; };
+		4226B1F72934114E00B0CE6E /* scientists.json in Resources */ = {isa = PBXBuildFile; fileRef = 4226B1F62934114E00B0CE6E /* scientists.json */; };
 		4284B8952922065C00C03742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284B8942922065C00C03742 /* AppDelegate.swift */; };
 		4284B8972922065C00C03742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284B8962922065C00C03742 /* ContentView.swift */; };
 		4284B8992922065C00C03742 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4284B8982922065C00C03742 /* Experience.rcproject */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4226B1F229340C3000B0CE6E /* ScientistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScientistController.swift; sourceTree = "<group>"; };
+		4226B1F429340C5E00B0CE6E /* Scientist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scientist.swift; sourceTree = "<group>"; };
+		4226B1F62934114E00B0CE6E /* scientists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scientists.json; path = ../../../ScientistRecognizer/ScientistRecognizer/scientists.json; sourceTree = "<group>"; };
 		4284B8912922065C00C03742 /* HelloAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4284B8942922065C00C03742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4284B8962922065C00C03742 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +56,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4226B1EC29340A7300B0CE6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42A002802930222200E83178 /* DetailView.swift */,
+				42A0027A292EF84F00E83178 /* ARViewContainer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4226B1ED29340A8E00B0CE6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42A0027C292FFA6200E83178 /* ObjectModel.swift */,
+				4226B1F429340C5E00B0CE6E /* Scientist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4226B1EE29340AA000B0CE6E /* AREntites */ = {
+			isa = PBXGroup;
+			children = (
+				42A0027F2930150A00E83178 /* hab_en.reality */,
+				42A0027E2930149000E83178 /* CosmonautSuit.reality */,
+				4284B8AC2922B40F00C03742 /* LunarRover.reality */,
+			);
+			path = AREntites;
+			sourceTree = "<group>";
+		};
+		4226B1EF29340AC300B0CE6E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4284B8A629220D1C00C03742 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4226B1F129340C1900B0CE6E /* UIControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4226B1F229340C3000B0CE6E /* ScientistController.swift */,
+			);
+			path = UIControllers;
+			sourceTree = "<group>";
+		};
 		4284B8882922065C00C03742 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +119,17 @@
 		4284B8932922065C00C03742 /* HelloAR */ = {
 			isa = PBXGroup;
 			children = (
+				4226B1F129340C1900B0CE6E /* UIControllers */,
+				4226B1EF29340AC300B0CE6E /* Coordinator */,
+				4226B1EE29340AA000B0CE6E /* AREntites */,
+				4226B1ED29340A8E00B0CE6E /* Models */,
+				4226B1EC29340A7300B0CE6E /* Views */,
 				4284B8942922065C00C03742 /* AppDelegate.swift */,
 				4284B8962922065C00C03742 /* ContentView.swift */,
-				4284B8A629220D1C00C03742 /* Coordinator.swift */,
 				4284B8982922065C00C03742 /* Experience.rcproject */,
-				4284B8AC2922B40F00C03742 /* LunarRover.reality */,
+				4226B1F62934114E00B0CE6E /* scientists.json */,
 				4284B89A2922065C00C03742 /* Assets.xcassets */,
 				4284B89C2922065C00C03742 /* Preview Content */,
-				42A0027A292EF84F00E83178 /* ARViewContainer.swift */,
-				42A0027C292FFA6200E83178 /* ObjectModel.swift */,
-				42A0027E2930149000E83178 /* CosmonautSuit.reality */,
-				42A0027F2930150A00E83178 /* hab_en.reality */,
-				42A002802930222200E83178 /* DetailView.swift */,
 				42A0028429303D4F00E83178 /* VOLCANO.usdz */,
 			);
 			path = HelloAR;
@@ -155,6 +204,7 @@
 				4284B89E2922065C00C03742 /* Preview Assets.xcassets in Resources */,
 				42A002832930390A00E83178 /* hab_en.reality in Resources */,
 				42A0028529303D4F00E83178 /* VOLCANO.usdz in Resources */,
+				4226B1F72934114E00B0CE6E /* scientists.json in Resources */,
 				4284B89B2922065C00C03742 /* Assets.xcassets in Resources */,
 				4284B8AD2922B45500C03742 /* LunarRover.reality in Resources */,
 				42A002822930390700E83178 /* CosmonautSuit.reality in Resources */,
@@ -172,8 +222,10 @@
 				42A0027B292EF84F00E83178 /* ARViewContainer.swift in Sources */,
 				4284B8972922065C00C03742 /* ContentView.swift in Sources */,
 				42A002812930222200E83178 /* DetailView.swift in Sources */,
+				4226B1F529340C5E00B0CE6E /* Scientist.swift in Sources */,
 				4284B8952922065C00C03742 /* AppDelegate.swift in Sources */,
 				42A0027D292FFA6200E83178 /* ObjectModel.swift in Sources */,
+				4226B1F329340C3000B0CE6E /* ScientistController.swift in Sources */,
 				4284B8992922065C00C03742 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

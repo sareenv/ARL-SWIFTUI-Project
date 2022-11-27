@@ -28,6 +28,10 @@ struct ContentView : View {
         .init(name: "Volcano Model", image: "https://cdn.britannica.com/34/231234-050-5B2280BB/volcanic-eruption-Antigua-Guatemala-volcano.jpg", modelUrl: "VOLCANO", description: "A volcano is a rupture in the crust of a planetary-mass object, such as Earth, that allows hot lava")
     ]
     
+    @State private var cardModels: [ObjectModel] = [
+        .init(name: "Scientist Recognizer", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/640px-Marie_Curie_c._1920s.jpg", modelUrl: "card", description: "Specia; card based game to help students to remember the names fo the scientists")
+    ]
+    
     @State private var searchText = ""
     
     var searchResults: [ObjectModel]  {
@@ -72,6 +76,33 @@ struct ContentView : View {
                             
                         }
                     }
+                    
+                    Section("Cards Interactive Models") {
+                        ForEach(cardModels, id: \.id) { record in
+                            NavigationLink {
+                                ModelDetail(model: record)
+                            } label: {
+                                HStack {
+                                    AsyncImage(url: URL(string: record.image)) { image in
+                                        image.resizable()
+                                    } placeholder: {
+                                        ProgressView()
+                                    }.frame(width: 120, height: 120)
+                                        .cornerRadius(12)
+
+                                    VStack(alignment: .leading) {
+                                        
+                                        Text(record.name)
+                                            .font(.headline)
+                                        Text(record.description)
+                                            .font(.body)
+                                            .lineLimit(3)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
                     
                     Section("Static Learning Models") {
                         ForEach(staticModels, id: \.id) { record in

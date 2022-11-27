@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "Building.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "centimeters",
+    "width" : 5.9458637709772946
+  }
+}

@@ -43,7 +43,13 @@ struct ModelDetail: View {
                 .cornerRadius(5)
                 .background(.green)
                 .sheet(isPresented: $isPresented) {
-                    ARViewContainer(modelName: model.modelUrl)
+                    if(model.modelUrl != "card") {
+                        ARViewContainer(modelName: model.modelUrl)
+                            .ignoresSafeArea()
+                    } else {
+                        ScientistARCardView()
+                            .ignoresSafeArea()
+                    }
                 }
                 
             }
@@ -56,6 +62,18 @@ struct ModelDetail: View {
         
     }
 }
+
+
+struct ScientistARCardView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        return ScientistController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+}
+
 
 struct ModelDetail_Previews: PreviewProvider {
     static var previews: some View {
